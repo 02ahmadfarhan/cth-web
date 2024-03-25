@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Pertama</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+            font: 12pt "Tahoma";
+        }
+    
+        * {
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm;
+            margin: 10mm auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: #333;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+  
+        /*.subpage {
+            padding: 1cm;
+            border: 5px red solid;
+            height: 257mm;
+            outline: 2cm #FFEAEA solid;
+        } */
+    
+        @page {
+            size: A4;
+            margin: 0;
+        }
+  
+        @media print {
+    
+            html,
+            body {
+            width: 210mm;
+            height: 297mm;
+            }
+    
+            .page {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+            }
+        }
+
+        /*  END    */
+
+        /*  START    */
+
+        .header{
+            display: flex;
+            text-align: center;
+            width: 100%;
+        }
+
+        .header img{
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .header .content{
+            align-items: left;
+            margin: 0;
+        }
+
+        .header .content #awal{
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .header .content #loro{
+            font-size: 25px;
+            font-weight: 500;
+            margin-top: -20px;
+        }
+
+        .header .content #telu{
+            font-size: small;
+        }
+
+        .header .content #empat{
+            font-size: small;
+            margin-top: -14px;
+        }
+
+        .header .content #empat a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .content #empat a:hover{
+            color: aqua;
+        }
+
+        hr{
+            border: 3px solid #D3D3D3;
+        }
+
+        /*  SECOND    */
+        #kanan{
+            text-align: end;
+            margin: 30px 20px -20px 0px;
+        }
+        .main{
+            margin: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main table{
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        .main .sKanan{
+            margin-right: -110px;
+        }
+
+        .main .sKanan .newP{
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        /*  CONTENT    */
+        .section{
+            display: block;
+            margin: 40px;
+        }
+
+        /* Footer   */
+        footer{
+            margin-left: 60%;
+        }
+
+        footer .kedua{
+            margin-top: 30%;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <!-- header -->
+
+        <div class="header">
+            <img src="logo.png" alt="img">
+            <div class="content">
+                <p id="awal">PEMERINTAH KABUPATEN INDRAMAYU</p>
+                <p id="loro">DINAS KOMUNIKASI DAN INFORMATIKA</p>
+                <!-- <br> -->
+                <p id="telu">Jl. Raya Sulaiman Lohbener No. 10 Indramayu</p>
+                <p id="empat">Email : <a href="#" target="_blank">piluproxy@gmail.com</a></p>
+            </div>
+        </div>
+    
+        <hr>
+    
+        <!-- End Header -->
+    
+        <!-- main -->
+
+        <p id="kanan">Indramayu, 27 Maret 2024</p>
+        <div class="main">
+            <table>
+                <tr>
+                    <td>Nomor</td>
+                    <td>:</td>
+                    <td>DISKOMINFO</td>
+                </tr>
+                <tr>
+                    <td>Sifat</td>
+                    <td>:</td>
+                    <td>Wajib</td>
+                </tr>
+                <tr>
+                    <td>Lampiran</td>
+                    <td>:</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Hal</td>
+                    <td>:</td>
+                    <td>
+                        <b>Rapat Penting</b>
+                    </td>
+                </tr>
+            </table>
+            <table class="sKanan">
+                <tr>
+                    <td>Kepada</td>
+                </tr>
+                <tr>
+                    <td>Yth.</td>
+                </tr>
+                <tr>
+                    <td>Kepala Dinas Komunikasi</td>
+                </tr>
+                <tr>
+                    <td>dan Informatika Kabupaten Indramayu</td>
+                </tr>
+                <tr>
+                    <td>di -</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="newP">Lohbener Indramayu</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    
+        <!-- End Main -->
+    
+        <!-- Section -->
+
+        <div class="section">
+            <p>Dengan Hormat,</p>
+            <p class="first">&emsp;&emsp; kami ingin memberitahukan bahwa pada tanggal 27 Maret 2024, akan diadakan acara rapat koordinasi di ruang konferensi Meja Bundar di Lohbener Indramayu. Acara ini bertujuan untuk Penigkatan Karyawan.
+            </p>
+    
+            <p>Kami mengundang Bapak/Ibu untuk hadir dalam acara tersebut pada pukul 08:00 Pagi dan berharap dapat berkontribusi dalam diskusi dan pembahasan yang akan dilakukan.</p>
+                
+            <p>Demikianlah surat ini kami sampaikan. Atas perhatian dan partisipasi Bapak/Ibu, kami ucapkan terima kasih.</p>
+        </div>
+
+        <!-- End Section -->
+    
+        <!-- Footer -->
+
+        <footer>
+            <p class="awal">
+                KEPALA DINAS <br> KOMUNIKASI DAN INFORMATIKA <br> KABUPATEN INDRAMAYU
+            </p>
+            <p class="kedua">UDIN MAHMUDIN, S.KOM</p>
+        </footer>
+        
+        <!-- End Footer -->
+    </div>
+</body>
+</html>
