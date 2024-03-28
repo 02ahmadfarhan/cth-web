@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Table</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            font: 14px "Poppins", sans-serif;
+            background: #222;
+        }
+
+        .content{
+            width: 210mm;
+            height: 210mm;
+            padding: 10mm;
+            margin: 10mm auto;
+            position: relative;
+            border: 1px #D3D3D3 solid;
+            border-radius: 10px;
+        }
+
+        .content img{
+            width: 200px;
+            height: 200px;
+            margin-left: 40px;
+            display: flex;
+            float: left;
+        }
+
+        .content .judul{
+            text-align: center;
+        }
+
+        .judul h3{
+            font-size: 25px;
+            margin-bottom: -30px;
+        }
+
+        .judul h2{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+
+        .judul .siji{
+            font-size: 15px;
+            margin-top: -15px;
+        }
+
+        .judul .loro{
+            margin-top: -10px;
+            font-size: 15px;
+        }
+
+        hr{
+            width: 100%;
+            border: 2px solid #D3D3D3;
+        }
+
+        table, tr, td{
+            text-align: center;
+            /* padding: 10px; */
+            border: 1px solid #D3D3D3;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="kaiLogo.jpg" alt="Logo">
+
+        <!-- judul -->
+        <div class="judul">
+            <h3>JADWAL KEBERANGKATAN</h3>
+            <H2>KAI</H2>
+            <P class="siji">DAOP 3 CIREBON</P>
+            <P class="loro">STASIUN JATIBARANG</P>
+        </div>
+        <hr>
+
+        <!-- end judul -->        
+        
+        <!-- table -->
+        <table>
+            <tr>
+                <td rowspan="2">No</td>
+                <td colspan="2">jam</td>
+                <td rowspan="2">HARI</td>
+                <td rowspan="2">NAMA KERETA</td>
+                <td rowspan="2">TUJUAN</td>
+            </tr>
+            <tr>
+                <td>Keberangkatan</td>
+                <td>Stasiun Tujuan</td>
+            </tr>
+            <tr>
+                <td>HARI</td>
+            </tr>
+            <tr>
+                <td>NAMA KERETA</td>
+            </tr>
+            <tr>
+                <td>TUJUAN</td>
+            </tr>
+        </table>
+        <!-- end table -->
+    </div>
+</body>
+</html>
