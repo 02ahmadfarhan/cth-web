@@ -69,12 +69,20 @@
             border: 2px solid #D3D3D3;
         }
 
-        table, tr, td{
+        table, tr, td, th{
             text-align: center;
             padding: 15px;
             border: 1px solid #D3D3D3;
             border-collapse: collapse;
         }
+
+        th{
+            font-weight: normal;
+        }
+
+        /*tr:nth-last-child(even){
+            background-color: #61afaf;
+        }*/
 
         .color{
             background-color: #61afaf;
@@ -105,10 +113,12 @@
                 <td rowspan="2">NAMA KERETA</td>
                 <td rowspan="2">TUJUAN</td>
             </tr>
+            
             <tr>
-                <td>KEBERANGKATAN</td>
-                <td>STASIUN TUJUAN</td>
+                <th>KEBERANGKATAN</th>
+                <th>STASIUN TUJUAN</th>
             </tr>
+
             <tr class="color">
                 <td>1</td>
                 <td>Stasiun Bekasi</td>
